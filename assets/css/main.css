@@ -1,0 +1,54 @@
+.hero {
+  display: flex;
+}
+
+.textHero,
+.imgHero {
+  flex: 1;
+}
+
+.textHero {
+  & h1 {
+    font-family: "Calistoga", "Times New Roman", Times, serif;
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin: 64px 0 16px 0;
+  }
+
+  & p {
+    max-width: 70%;
+    line-height: 1.5;
+    margin-bottom: 64px;
+  }
+}
+
+.imgHero {
+  height: 700px;
+}
+
+@media (max-width: 1120px) {
+  .textHero h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .textHero {
+    text-align: center;
+
+    p {
+      max-width: 80%;
+      margin: 0 auto 40px auto;
+    }
+  }
+
+  .imgHero {
+    max-width: 400px;
+    margin: 40px auto;
+  }
+}

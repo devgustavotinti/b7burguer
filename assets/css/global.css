@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-principal: #141414;
+  --cor-secundaria: #f7f7f7;
+  --cor-texto: #979797;
+  --cor-realce: #fe6a0f;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  background-color: var(--cor-principal);
+  color: var(--cor-secundaria);
+}
+
+a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--cor-realce);
+  font-weight: 500;
+  border-radius: 4px;
+  padding: 20px 80px;
+
+  &:hover {
+    background-color: #fb7624;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+@media (max-width: 820px) {
+  .container {
+    max-width: 90%;
+    padding: 40px 0;
+  }
+}
