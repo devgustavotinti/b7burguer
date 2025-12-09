@@ -51,4 +51,8 @@ a {
     max-width: 90%;
     padding: 40px 0;
   }
+
+  .button {
+    padding: 15px 60px;
+  }
 }
