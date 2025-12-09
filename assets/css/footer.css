@@ -9,3 +9,10 @@
     justify-content: space-between;
   }
 }
+
+@media (max-width: 500px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
