@@ -3,10 +3,14 @@
   margin-top: 20px;
   padding: 20px 0;
 
-  & .footer-container{
+  & .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & p {
+      color: var(--cor-texto);
+    }
   }
 }
 
