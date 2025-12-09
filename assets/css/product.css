@@ -12,6 +12,11 @@
   position: relative;
   background-color: #1f1f1f;
 
+  &:hover {
+    scale: 1.05;
+    transition: 0.3s;
+  }
+
   & .warning {
     position: absolute;
     top: 50px;
@@ -31,9 +36,35 @@
     padding-top: 60px;
   }
 
-  & .info{
+  & .info {
     background-color: #1f1f1f;
     padding: 60px 30px 30px 30px;
     margin-top: -40px;
+  }
+
+  & .product-name {
+    font-family: "Calistoga";
+    font-size: 1.8rem;
+    margin: 10px 0;
+  }
+
+  & .product-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--cor-realce);
+  }
+}
+
+@media (max-width: 820px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .products {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
