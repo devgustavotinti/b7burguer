@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 .button {
   display: inline-block;
   background-color: var(--cor-realce);
