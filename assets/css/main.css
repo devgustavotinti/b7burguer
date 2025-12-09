@@ -24,6 +24,10 @@
   }
 }
 
+.imgHero {
+  max-height: 300px;
+}
+
 @media (max-width: 1120px) {
   .textHero h1 {
     font-size: 3.5rem;
